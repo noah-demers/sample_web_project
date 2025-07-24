@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developement</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+</head>
+<body>
+  
+  <div class="navbar">
+    <!-- <a href="#menuactivation"><button ><i class="gg-menu-right"></i></button></a> -->
+    <!-- <button id="openMenuBtn"><i class="gg-menu-right"></i></button> -->
+    <button id="openMenuBtn" class="icon-btn">
+      <!-- <i class="gg-menu-right"></i></button> -->
+      <!-- Example: hamburger icon from Heroicons -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" width="24" height="24" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+
+
+  </div>
+  <div class="menu" id="menuactivation">
+    <div class="closeMenu">
+      <!-- <a class="menuClose" href="#clclose">&times;</a> -->
+      <a class="menuClose" href="#" id="closeMenuBtn">&times;</a>
+
+    </div>
+    <div class="menubody">
+      <h2>Menu</h2>
+      <div class="menu-container">
+        <div class="menuItem"><a href="#iamheader">Start</a></div>
+        <div class="menuItem"><a href="#iamlectures">Course Lectures</a></div>
+        <div class="menuItem"><a href="#relatedbooks">Related Books</a></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="header" id="iamheader">
+        <header>
+            <h1 style="color: white;">Web Development</h1>
+
+            <button><a href="#relatedbooks">Related Books</a></button>
+        </header>
+      </div>
+      
+        <div class="lectures" id="iamlectures">
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images/css_icon.png" alt="Card 1">
+                    <h2>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</h2>
+                </div>
+                <div class="card">
+                  <img src="images/go_icon.png" alt="Card 2">
+                    <h2>Go is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.</h2>
+                </div>
+                <div class="card">
+                  <img src="images/http_icon.png" alt="Card 3">
+                    <h2>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</h2>
+                </div>
+                <div class="card">
+                  <img src="images/js_icon.png" alt="Card 4">
+                    <h2>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</h2>
+                </div>
+            </div>                          
+        </div>
+      
+        <div class="books">
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Javascrpt, The Definitive Guide</h2>
+              <a class="close" href="#relatedbooks">&times;</a>
+              <div class="content">
+                <div class="carconts">
+                <div class="carcont">
+                  <img src="images/Book1-1.jpg" style="width:200px;height:310px;">
+                </div>
+                <div class="carcont">
+                  <p>
+                    Perfect for beginners familiar with programming basics.
+                  </p>
+                  <div class="amazon"><a href="https://www.amazon.co.jp/Javascript-Definitive-Most-used-Programming-Language/dp/1491952024"><button>Amazon</button></a></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup2" class="overlay">
+            <div class="popup">
+              <h2>The Road to React</h2>
+              <a class="close" href="#relatedbooks">&times;</a>
+              <div class="content">
+                <div class="carconts">
+                <div class="carcont">
+                  <img src="images/Book2-1.jpg" style="width:200px;height:310px;">
+                </div>
+                <div class="carcont">
+                  <p>
+                    Perfect for beginners familiar with programming basics.
+                  </p>
+                  <div class="amazon"><a href="https://www.amazon.co.jp/-/en/Robin-Wieruch-ebook/dp/B077HJFCQX"><button>Amazon</button></a></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup3" class="overlay">
+            <div class="popup">
+              <h2>Introducting Go</h2>
+              <a class="close" href="#relatedbooks">&times;</a>
+              <div class="content">
+                <div class="carconts">
+                <div class="carcont">
+                  <img src="images/Book3-1.jpg" style="width:200px;height:310px;">
+                </div>
+                <div class="carcont">
+                  <p>
+                    Perfect for beginners familiar with programming basics.
+                  </p>
+                  <div class="amazon"><a href="https://www.amazon.com/Introducing-Go-Reliable-Scalable-Programs/dp/1491941952"><button>Amazon</button></a></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="book-container" id="relatedbooks">
+                <h1 class="hover-2">
+                  MOST POPULAR BOOKS
+                </h1>
+                <div class="card-container">
+                  
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/Book1-1.jpg" alt="Avatar" style="width:200px;height:300px;">
+                      </div>
+                      <div class="flip-card-back" style="display: flex; justify-content: center; align-items: center;">
+
+                        <button1><a href="#popup1">Buy Now!</a></button1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/Book2-1.jpg" alt="Avatar" style="width:200px;height:300px;">
+                      </div>
+                      <div class="flip-card-back" style="display: flex; justify-content: center; align-items: center;">
+                        <button1><a href="#popup2">Buy Now!</a></button1>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/Book3-1.jpg" alt="Avatar" style="width:200px;height:300px;">
+                      </div>
+                      <div class="flip-card-back" style="display: flex; justify-content: center; align-items: center;">
+                        <button1><a href="#popup3">Buy Now!</a></button1>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+        <!-- </div> -->
+              <!-- <div class="footer">Footer</div> -->
+              <div class="columns footer">
+                <div class="column">
+                  <center><p>Created by Noah Takeru deMers</p></center>
+                </div>
+              </div>
+              
+    </div> 
+    <script src="js/script.js"></script>
+     
+</body>
+</html>

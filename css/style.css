@@ -1,0 +1,401 @@
+.gg-menu-right {
+  transform: scale(var(--ggs,1))
+}
+a{
+  text-decoration: none;
+}
+.gg-menu-right,
+.gg-menu-right::after,
+.gg-menu-right::before {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 3px;
+  background: currentColor
+}
+
+.gg-menu-right::after,
+.gg-menu-right::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 10px
+}
+
+.gg-menu-right::after {
+  top: 6px;
+  width: 14px
+}
+
+.navbar{
+  position:fixed;
+  top: 50px;
+  right: 50px;
+  padding: 10px;
+
+}
+
+button, .menuClose, .icon-btn {
+  cursor: pointer;
+}
+
+.menu{
+  background-color: #333;
+  top: -100vh;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top ease-in 300ms;
+  visibility: hidden;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubody{
+  text-align: center;
+  width: 100%;
+}
+.menuItem{
+  margin: 10px;
+}
+.closeMenu{
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 5px;
+  color: white !important;
+}
+.closeMenu a{
+  font-size: 30px;
+  color: white;
+}
+.menu:target{
+  top: 0;
+  visibility: visible;
+}
+.header {
+  width: calc(100% - 20px);
+  background-color: #eee;
+  padding: 10px;
+  margin: 10px auto;
+  float:left;
+}
+
+
+header {
+  background-image: url('../images/Header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 2 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* h1 {
+  font-size: 3em;
+  color: white;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: rgb(68, 68, 243);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  animation: slideInFromRight 1s ease-out;
+} */
+
+/* @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.lectures {
+  width: calc(100% - 20px);
+  background: linear-gradient(to left,rgba(73, 2, 84, 0.5),rgba(43, 28, 183, 0.5), rgba(13, 66, 3, 0.5)),
+    url('../images/Background.jpg');
+  background-size: cover;
+  padding: 10px;
+  margin: 10px auto;
+  float:left;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: rgba(229, 229, 229, 0.564);
+  width: 200px;
+  height: 300px;
+  margin: 0 20px;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center
+}
+
+.card img {
+  width: calc(100% - 120px);
+  height: calc(100% - 190px);
+  margin: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.card h2 {
+  font-size: 0.8em;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+
+}
+
+.card:hover {
+  box-shadow: 0 0 0 10px rgba(72, 28, 143, 0.5);
+}
+
+
+/* -------------------------------- */
+button1 {
+  padding: 8px 16px;
+  background-color: rgb(94, 206, 131);
+  color: white;
+  border-radius: 4px;
+  animation: slideInFromRight 1s ease-out;
+  cursor: pointer;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10 !important;
+}
+/* .overlay:target {
+  visibility: visible;
+  opacity: 1;
+} */
+.popup-container{
+  max-height: 100vh;
+  overflow: scroll;
+  padding: 10px;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  z-index: 10;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  overflow: auto;
+}
+
+
+.books {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px auto;
+  float:left;
+  background: linear-gradient(to left,rgba(73, 2, 84, 0.5),rgba(43, 28, 183, 0.5), rgba(13, 66, 3, 0.5));
+}
+
+.menu-container a {
+  color: white;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  z-index: 1;
+}
+
+/* / This container is needed to position the front and back side / */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+/* / Do an horizontal flip when you move the mouse over the flip box container / */
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+} */
+/* 
+/ Position the front and back side / */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1 !important;
+}
+
+
+.flip-card-front {
+  background-color: rgb(177, 237, 167);
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: rgb(152, 204, 143);
+  color: rgb(162, 229, 174);
+  transform: rotateY(180deg);
+}
+
+
+.carconts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(248, 254, 249)
+}
+
+.carcont {
+  flex: 50%;
+  background-color: rgb(253, 254, 253);
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .box {
+    width: 50%;
+  }
+  .popup {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .header, .lectures, .books, .footer {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .header h1{
+    font-size: 25px;
+    /* color: #ffffff; */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  header {
+    background-size: contain;
+    background-position: top left;
+    height: 200px;
+  }
+  button{
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(197, 233, 184)
+}
+
+.column {
+  flex: 50%;
+  background-color: rgb(224, 243, 207);
+  font-size: 20px;
+}
+
+.footer a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  font-size: 22px;
+  color: rgb(7, 134, 39);
+  text-decoration: none;
+}
